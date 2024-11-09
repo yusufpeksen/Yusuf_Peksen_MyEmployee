@@ -1,12 +1,12 @@
 # MyEmployee Project Setup Guide
 
-**Technologies Used**: Next.js, Java Spring Boot, Tailwind CSS, PostgreSQL, Postman
+**Technologies Used**: Next.js, Java Spring Boot, Tailwind CSS, PostgreSQL, Postman , TypeScript
 
 ---
 
 ## Prerequisites
 
-Before starting, ensure you have PostgreSQL, Maven, and Node.js installed on your system.
+Before starting, ensure you have PostgreSQL, Maven, Java 17 and Node.js installed on your system.
 
 ---
 
@@ -19,7 +19,7 @@ CREATE DATABASE myemployee;
 ```
 
 Make sure to replace postgres with your actual PostgreSQL username if it differs:
-
+Open backuped sql file :
 ```bash
 psql -U postgres -h localhost -d myemployee -f path/to/myemployee_backup.sql
 ```
