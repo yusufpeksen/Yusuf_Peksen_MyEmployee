@@ -1,12 +1,12 @@
 # MyEmployee Project Setup Guide
 
-**Technologies Used**: Next.js, Java Spring Boot, Tailwind CSS, PostgreSQL, Postman
+**Technologies Used**: Next.js, Java Spring Boot, Tailwind CSS, PostgreSQL, Postman , TypeScript
 
 ---
 
 ## Prerequisites
 
-Before starting, ensure you have PostgreSQL, Maven, and Node.js installed on your system.
+Before starting, ensure you have PostgreSQL, Maven, Java 17 and Node.js installed on your system.
 
 ---
 
@@ -19,7 +19,7 @@ CREATE DATABASE myemployee;
 ```
 
 Make sure to replace postgres with your actual PostgreSQL username if it differs:
-
+Open backuped sql file :
 ```bash
 psql -U postgres -h localhost -d myemployee -f path/to/myemployee_backup.sql
 ```
@@ -49,3 +49,18 @@ The frontend application will start on port 3000. Visit http://localhost:3000 to
 You can find the usernames and passwords in the users table of the database. Note: All passwords are encrypted but are originally set to "12345". You do not need to re-encode them.
 
 Ensure both the backend (port 8080) and frontend (port 3000) are running simultaneously for the application to work correctly. Use Postman to test the API endpoints or troubleshoot backend issues if needed.
+
+---
+---
+Missing Requirements : 
+- I can not implement Profil Picture because I do not have aws account. I registered but It says 24 - 48 hours to confirm your account. So I cant implement with S3 and I do not know how to implement with file path.
+
+Other Requirements work solid.
+
+---
+
+You will see different pages with when you authorized admin role and employee role. Admins can see more feature than Employees such as Sort by Last Name , Start Date , Add New Employee , Detail Employee's , Update Employee.
+
+---
+
+contact : ahmetpeksen77@gmail.com
