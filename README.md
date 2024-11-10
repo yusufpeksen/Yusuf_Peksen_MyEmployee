@@ -53,12 +53,9 @@ Ensure both the backend (port 8080) and frontend (port 3000) are running simulta
 ---
 
 ## Key Features
-Role-Based Access: Users with an admin role have access to more features compared to those with an employee role. Admin-specific features include:
-Sorting employees by last name or start date.
-Adding new employees.
-Viewing and updating employee details.
-Middleware: Implemented to check the JSESSIONID cookie, ensuring that users are logged in before accessing the system.
-Data Fetching: Repeated fetching logic is efficiently handled using custom hooks (useGetAddressTypes, useGetEmployees, useUserInfo).
+- Role-Based Access: Users with an admin role have access to more features compared to those with an employee role. Admin-specific features include: Sorting employees by last name or start date. Adding new employees. Viewing and updating employee details.
+- Middleware: Implemented to check the JSESSIONID cookie, ensuring that users are logged in before accessing the system.
+ - Data Fetching: Repeated fetching logic is efficiently handled using custom hooks (useGetAddressTypes, useGetEmployees, useUserInfo).
 
 ---
 Additionally : 
