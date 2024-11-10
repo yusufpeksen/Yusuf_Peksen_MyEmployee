@@ -1,8 +1,9 @@
 "use client";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import { Address, Employee } from "@/app/interfaces/interfaces";
+import withRoleProtection from "@/app/rolePageProtection/withRoleProtection";
 
 const EmployeeDetails = () => {
   const { id } = useParams();
@@ -71,6 +72,8 @@ const EmployeeDetails = () => {
     return <div>No employee found.</div>;
   }
 
+  console.log(addresses);
+
   return (
     <div className="min-h-screen flex justify-center items-center">
       <Navbar />
@@ -85,7 +88,9 @@ const EmployeeDetails = () => {
         {addresses.length > 0 ? (
           addresses.map((address, index) => (
             <div key={index} className="mt-2 text-left">
-              <p className="text-red-500">Adress {index}</p>
+              <p className="text-yellow-400">
+                {address.addressType?.typeName} Address
+              </p>
               <p>Street Address: {address.streetAddress}</p>
               <p>City: {address.city}</p>
               <p>State: {address.state}</p>
@@ -101,4 +106,4 @@ const EmployeeDetails = () => {
   );
 };
 
-export default EmployeeDetails;
+export default withRoleProtection(EmployeeDetails, "[ADMIN]");

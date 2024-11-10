@@ -8,9 +8,9 @@ import java.util.List;
 public class EmployeeDTO {
     private String firstName;
     private String lastName;
-    private String birthDate; // String formatta tarih
+    private String birthDate;
     private String jobTitle;
-    private String startDate; // String formatta tarih
+    private String startDate;
     private String photoPath;
-    private List<AddressDTO> addresses; // Adresleri DTO olarak al
+    private List<AddressDTO> addresses;
 }

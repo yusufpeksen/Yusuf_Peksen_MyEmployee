@@ -15,6 +15,9 @@ const Navbar = () => {
         <Link href={"/"}>Home</Link>
         <Link href={"/employees"}>Employees</Link>
         {role === "[ADMIN]" && <Link href={"/newEmployee"}>New Employee</Link>}
+        <Link href="http://localhost:8080/logout" className="text-red-500">
+          Logout
+        </Link>
       </ul>
     </div>
   );

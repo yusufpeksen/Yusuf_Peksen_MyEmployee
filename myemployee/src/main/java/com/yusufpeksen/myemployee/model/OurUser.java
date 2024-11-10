@@ -22,7 +22,7 @@ public class OurUser {
 
     @OneToOne
     @JoinColumn(name = "employee_id")
-    @JsonBackReference // Breaks the infinite loop during serialization
+    @JsonBackReference
     private Employee employee;
 
 

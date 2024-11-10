@@ -1,7 +1,6 @@
 package com.yusufpeksen.myemployee.controller;
 
 import com.yusufpeksen.myemployee.model.AddressType;
-import com.yusufpeksen.myemployee.repository.AddressTypeRepository;
 import com.yusufpeksen.myemployee.service.AddressTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

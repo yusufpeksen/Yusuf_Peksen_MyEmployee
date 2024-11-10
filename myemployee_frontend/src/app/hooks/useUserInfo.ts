@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const useUserInfo = () => {
   const [role, setRole] = useState<string | null>(null);

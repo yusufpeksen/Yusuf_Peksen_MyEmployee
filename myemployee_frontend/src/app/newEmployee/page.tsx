@@ -1,9 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import { Address, AddressType } from "../interfaces/interfaces";
 import useGetAddressTypes from "../hooks/useGetAddressTypes";
+import withRoleProtection from "../rolePageProtection/withRoleProtection";
 
 const NewEmployeePage = () => {
   const router = useRouter();
@@ -124,7 +125,7 @@ const NewEmployeePage = () => {
       <div className="px-10 my-5">
         <h1 className="text-2xl font-bold mb-4 mt-24">Add New Employee</h1>
         {error && <div className="text-red-500 mb-4">{error}</div>}
-        <form className="space-y-4 w-1/2">
+        <form className="space-y-4">
           <div>
             <label className="block mb-1 text-white">First Name</label>
             <input
@@ -307,4 +308,4 @@ const NewEmployeePage = () => {
   );
 };
 
-export default NewEmployeePage;
+export default withRoleProtection(NewEmployeePage, "[ADMIN]");

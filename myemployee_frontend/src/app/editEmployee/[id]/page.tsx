@@ -1,11 +1,12 @@
 "use client";
-import { useParams, useRouter } from "next/navigation"; // useParams ve useRouter hook'ları
+import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Navbar from "@/app/components/Navbar";
 import { Employee } from "@/app/interfaces/interfaces";
+import withRoleProtection from "@/app/rolePageProtection/withRoleProtection";
 
 const EditEmployeePage: React.FC = () => {
-  const { id: employeeId } = useParams(); // useParams'tan employeeId'yi al
+  const { id: employeeId } = useParams();
   const router = useRouter();
 
   const [employeeData, setEmployeeData] = useState<Employee | null>(null);
@@ -155,4 +156,4 @@ const EditEmployeePage: React.FC = () => {
   );
 };
 
-export default EditEmployeePage;
+export default withRoleProtection(EditEmployeePage, "[ADMIN]");

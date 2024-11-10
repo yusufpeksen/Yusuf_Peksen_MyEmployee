@@ -35,7 +35,6 @@ public class AddressController {
         address.setPostalCode(addressDTO.getPostalCode());
         address.setCountry(addressDTO.getCountry());
 
-        // Employee ve AddressType'ı veritabanından al ve ayarla
         Employee employee = employeeService.getEmployeeById(addressDTO.getEmployeeId())
                 .orElseThrow(() -> new RuntimeException("Employee not found"));
         AddressType addressType = addressTypeService.getAdressTypeById(addressDTO.getAddressTypeId())

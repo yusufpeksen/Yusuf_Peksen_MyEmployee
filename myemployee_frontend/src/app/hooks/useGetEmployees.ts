@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Employee } from "../interfaces/interfaces";
 
 const useGetEmployees = () => {
@@ -27,7 +27,7 @@ const useGetEmployees = () => {
     fetchEmployees();
   }, []);
 
-  return { employees, setEmployees, loading, error }; // setEmployees'i ekledik
+  return { employees, setEmployees, loading, error };
 };
 
 export default useGetEmployees;

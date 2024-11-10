@@ -30,7 +30,7 @@ public class Employee {
     private Set<Address> addresses;
 
     @OneToOne(mappedBy = "employee")
-    @JsonManagedReference // Manages the serialization
+    @JsonManagedReference
     private OurUser user;
 
     private LocalDateTime createdAt = LocalDateTime.now();
