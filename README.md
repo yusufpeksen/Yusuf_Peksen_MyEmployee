@@ -51,12 +51,20 @@ You can find the usernames and passwords in the users table of the database. Not
 Ensure both the backend (port 8080) and frontend (port 3000) are running simultaneously for the application to work correctly. Use Postman to test the API endpoints or troubleshoot backend issues if needed.
 
 ---
+
+## Key Features
+Role-Based Access: Users with an admin role have access to more features compared to those with an employee role. Admin-specific features include:
+Sorting employees by last name or start date.
+Adding new employees.
+Viewing and updating employee details.
+Middleware: Implemented to check the JSESSIONID cookie, ensuring that users are logged in before accessing the system.
+Data Fetching: Repeated fetching logic is efficiently handled using custom hooks (useGetAddressTypes, useGetEmployees, useUserInfo).
+
 ---
 Additionally : 
-- I can not implement Profil Picture because I do not have aws account. I registered but It says 24 - 48 hours to confirm your account. So I cant implement with S3 and I do not know how to implement with file path.
+- I could not implement Profil Picture because I do not have aws account. I registered but It says 24 - 48 hours to confirm your account. So I cant implement with S3 and I do not know how to implement with file path.
 - I could implement Exception handling , better DTOs (Data Transfer Objects) , Mappers but I did not implement because of time. I am preparing my midterms right now so I had to keep simple this project.
-- I used Hooks for repeated fetching codes in Next.js useGetAddressTypes , useGetEmployees , useUserInfo.
-- I used middlewar for checking JSESSIONID from cookies for be sure to logged into system.
+
 Other Requirements work solid.
 
 ---
