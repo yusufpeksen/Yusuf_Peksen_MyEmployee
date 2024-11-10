@@ -52,9 +52,11 @@ Ensure both the backend (port 8080) and frontend (port 3000) are running simulta
 
 ---
 ---
-Missing Requirements : 
+Additionally : 
 - I can not implement Profil Picture because I do not have aws account. I registered but It says 24 - 48 hours to confirm your account. So I cant implement with S3 and I do not know how to implement with file path.
-
+- I could implement Exception handling , better DTOs (Data Transfer Objects) , Mappers but I did not implement because of time. I am preparing my midterms right now so I had to keep simple this project.
+- I used Hooks for repeated fetching codes in Next.js useGetAddressTypes , useGetEmployees , useUserInfo.
+- I used middlewar for checking JSESSIONID from cookies for be sure to logged into system.
 Other Requirements work solid.
 
 ---
