@@ -59,15 +59,12 @@ Ensure both the backend (port 8080) and frontend (port 3000) are running simulta
 
 ---
 Additionally : 
-- I could not implement Profil Picture because I do not have aws account. I registered but It says 24 - 48 hours to confirm your account. So I cant implement with S3 and I do not know how to implement with file path.
+- I could not implement Profil Picture because I do not have aws account. I registered but It says 24 - 48 hours to confirm your account. So I could not implement with S3 and I do not know how to implement with file system.
 - I could implement Exception handling , better DTOs (Data Transfer Objects) , Mappers but I did not implement because of time. I am preparing my midterms right now so I had to keep simple this project.
 
 Other Requirements work solid.
 
 ---
 
-You will see different pages with when you authorized admin role and employee role. Admins can see more feature than Employees such as Sort by Last Name , Start Date , Add New Employee , Detail Employee's , Update Employee.
-
----
 
 contact : ahmetpeksen77@gmail.com
